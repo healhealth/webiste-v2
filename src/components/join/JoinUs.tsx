@@ -23,7 +23,7 @@ const JoinUs = () => {
             marginTop: 8,
           }}
         >
-          JOIN US
+          JOIN US YESTERDAY
         </Typography>
         <Typography sx={{ marginTop: 2 }}>
           Are you passionate about mental health and technology? Are you looking
