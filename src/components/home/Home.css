@@ -1,0 +1,10 @@
+.bg-img {
+  margin-top: 3em;
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .bg-img {
+    margin-top: 1.5em;
+    height: auto;
+  }
+}

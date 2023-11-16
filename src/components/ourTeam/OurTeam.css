@@ -1,0 +1,24 @@
+.team-card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1em;
+  row-gap: 2em;
+  margin-top: 4em;
+  text-align: center;
+}
+@media (max-width: 640px) {
+  .team-card-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 480px) {
+  .team-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-team-title {
+    margin-top: 0px;
+  }
+}

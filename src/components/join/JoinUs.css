@@ -1,0 +1,15 @@
+.join-us-button {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+.join-us-button:hover {
+  background-color: oklch(55.59% 0.118 181);
+}
+@media (max-width: 480px) {
+  .join-us-title {
+    margin-top: 0px;
+  }
+}
