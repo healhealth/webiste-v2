@@ -68,16 +68,16 @@ const Navbar = () => {
             <Link className="nav-link" to="/">
               Home
             </Link>
-            <Link className="nav-link" to="/about">
+            <Link className="nav-link" to="/about-us">
               About us
             </Link>
-            <Link className="nav-link" to="/services">
+            <Link className="nav-link" to="/our-services">
               Services
             </Link>
-            <Link className="nav-link" to="/ourteam">
+            <Link className="nav-link" to="/our-team">
               Team
             </Link>
-            <Link className="nav-link" to="/join">
+            <Link className="nav-link" to="/join-us">
               Join us
             </Link>
           </ul>
