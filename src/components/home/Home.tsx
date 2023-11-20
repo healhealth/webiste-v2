@@ -1,13 +1,15 @@
 import "./Home.css";
 import bg from "../../assets/bg.jpg";
-import OurMissionAndVision from "../ourVisionAndMission/OurVisionAndMission";
-import OurCoreValues from "../ourCoreValues/OurCoreValues";
+import OurVisionAndMission from "../ourVisionAndMission/OurVisionAndMission";
+
 const Home = () => (
   <div className="home">
-    <div className="img-container">
-      <img className="bg-img" src={bg} alt="" />
+    <div className="container-sm">
+      <div className="img-container">
+        <img className="bg-img" src={bg} alt="" />
+      </div>
+      <OurVisionAndMission />
     </div>
-    <OurMissionAndVision />
   </div>
 );
 
