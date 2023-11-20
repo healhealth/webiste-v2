@@ -13,7 +13,7 @@ const OurTeam = () => {
         <p className="header">Our Team</p>
         <div className="team-content-container">
           <div className="team-item">
-            <img src={nashmil} alt="nashmil" />
+            <img src={nashmil} alt="nashmil-photo" />
             <p className="team-name">
               <strong>Nashmil Sepehriazad</strong>
             </p>
@@ -26,7 +26,7 @@ const OurTeam = () => {
             </p>
           </div>
           <div className="team-item">
-            <img src={bence} alt="bence" />
+            <img src={bence} alt="bence-photo" />
             <p className="team-name">
               <strong>Bence A. Tóth</strong>
             </p>
@@ -39,7 +39,7 @@ const OurTeam = () => {
             </p>
           </div>
           <div className="team-item">
-            <img src={marcell} alt="marcel" />
+            <img src={marcell} alt="marcel-photo" />
             <p className="team-name">
               <strong> Marcell Ákos Tóth</strong>
             </p>
@@ -52,7 +52,7 @@ const OurTeam = () => {
             </p>
           </div>
           <div className="team-item">
-            <img src={qamar} alt="qamar" />
+            <img src={qamar} alt="qamar-photo" />
             <p className="team-name">
               <strong> Qamar Farooq</strong>
             </p>
@@ -64,7 +64,7 @@ const OurTeam = () => {
             </p>
           </div>
           <div className="team-item">
-            <img src={dejene} alt="dejene" />
+            <img src={dejene} alt="dejene-photo" />
             <p className="team-name">
               <strong> Dejene Daba</strong>
             </p>
@@ -75,7 +75,7 @@ const OurTeam = () => {
             </p>
           </div>
           <div className="team-item">
-            <img src={behzad} alt="behzad" />
+            <img src={behzad} alt="behzad-photo" />
             <p className="team-name">
               <strong> Behzad Ebrahimi</strong>
             </p>
