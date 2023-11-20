@@ -18,15 +18,15 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="" element={<Home />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/services" element={<Services />}></Route>
-        <Route path="/corevalues" element={<OurCoreValue />}></Route>
-        <Route path="/ourteam" element={<Team />}></Route>
+        <Route path="/about-us" element={<About />}></Route>
+        <Route path="/our-services" element={<Services />}></Route>
+        <Route path="/our-corevalues" element={<OurCoreValue />}></Route>
+        <Route path="/our-team" element={<Team />}></Route>
         <Route
           path="/missionandvision"
           element={<OurMissionAndVision />}
         ></Route>
-        <Route path="/join" element={<Join />}></Route>
+        <Route path="/join-us" element={<Join />}></Route>
       </Routes>
       <hr className="container" />
       <Footbar />
