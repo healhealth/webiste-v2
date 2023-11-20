@@ -26,7 +26,7 @@ function App() {
           path="/missionandvision"
           element={<OurMissionAndVision />}
         ></Route>
-        <Route path="/join-us" element={<Join />}></Route>
+        <Route path="/join-us-today" element={<Join />}></Route>
       </Routes>
       <hr className="container" />
       <Footbar />
