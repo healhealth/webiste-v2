@@ -35,28 +35,28 @@ const Navbar = () => {
             </Link>
             <Link
               className="nav-link"
-              to="/about"
+              to="/about-us"
               onClick={handleCloseMobileMenu}
             >
               About us
             </Link>
             <Link
               className="nav-link"
-              to="/services"
+              to="/our-services"
               onClick={handleCloseMobileMenu}
             >
               Services
             </Link>
             <Link
               className="nav-link"
-              to="/team"
+              to="/our-team"
               onClick={handleCloseMobileMenu}
             >
               Team
             </Link>
             <Link
               className="nav-link"
-              to="/join"
+              to="/join-us-today"
               onClick={handleCloseMobileMenu}
             >
               Join us
@@ -77,7 +77,7 @@ const Navbar = () => {
             <Link className="nav-link" to="/our-team">
               Team
             </Link>
-            <Link className="nav-link" to="/join-us">
+            <Link className="nav-link" to="/join-us-today">
               Join us
             </Link>
           </ul>
