@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 
 import "./App.css";
-import Home from "./components/home/Home";
+import Home from "./pages/Home";
 import Navbar from "./components/navbar/Navbar";
 import OurCoreValue from "./components/ourCoreValues/OurCoreValues";
 import Services from "./components/ourServices/OurServices";
@@ -10,7 +10,6 @@ import OurMissionAndVision from "./components/ourVisionAndMission/OurVisionAndMi
 import About from "./pages/About";
 import Join from "./pages/Join";
 import Footbar from "./components/footbar/Footbar";
-import { Divider } from "@mui/material";
 
 function App() {
   return (
