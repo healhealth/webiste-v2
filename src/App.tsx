@@ -28,7 +28,7 @@ function App() {
         ></Route>
         <Route path="/join" element={<Join />}></Route>
       </Routes>
-      {/* <Divider sx={{ color: "oklch(65.59% 0.118 181)", marginTop: "2em" }} /> */}
+      <hr className="container" />
       <Footbar />
     </div>
   );
