@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <div className="about-us">
       <div className="container-sm">
-        <p className="header">About Us</p>
+        <h2 className="header">About Us</h2>
         <p>
           We are mental health and digital experts who help mental health
           professionals, business or community leaders create solutions, tools,
