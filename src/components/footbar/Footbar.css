@@ -8,20 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.footbar-left-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 3em;
-}
-.footbar-left-text p {
-  font-size: 0.8em;
-}
-.footbar-left-text p strong {
-  font-weight: 600;
-  line-height: 1.8;
 }
 .footbar-left img {
   width: 50px;
