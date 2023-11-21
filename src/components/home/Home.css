@@ -1,3 +1,20 @@
-.bg-img {
+.home {
+  margin-bottom: 3em;
+}
+.home .container {
+  background-image: url("../../assets/site-background-img.jpg");
+  background-size: cover;
   margin-top: 3em;
+}
+.background-text-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  height: 500px;
+  color: #fff;
+  font-size: xx-large;
+  font-family: bold;
 }
