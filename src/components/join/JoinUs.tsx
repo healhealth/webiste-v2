@@ -5,7 +5,7 @@ const JoinUs = () => {
   return (
     <div className="join-us">
       <div className="container-sm">
-        <p className="header">Join Us Today</p>
+        <h2 className="header">Join Us Today</h2>
         <p>
           Are you passionate about mental health and technology? Are you looking
           for an opportunity to gain experience and make a difference in the
