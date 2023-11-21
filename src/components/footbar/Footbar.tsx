@@ -9,14 +9,15 @@ const Footbar = () => {
       <div className="container">
         <div className="footbar-left">
           <img src={logo} alt="logo" />
-          <div className="footbar-left-text">
-            <p>
-              <strong>Heal Health Aps</strong>
-            </p>
-            <p>Muldager 56, Brønshøj</p>
-            <p>Copenhagen 2700</p>
-            <p>CVR number: 43883372</p>
-          </div>
+          <address>
+            <strong>Heal Health Apps</strong>
+            <br />
+            Muldager 56, Brønshøj
+            <br />
+            Copenhagen 2700
+            <br />
+            CVR number:43883372
+          </address>
         </div>
         <div className="footbar-right">
           <a
