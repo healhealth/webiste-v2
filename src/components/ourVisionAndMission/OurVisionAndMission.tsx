@@ -5,7 +5,7 @@ const OurVisionAndMission = () => {
   return (
     <div className="vision-and-mission">
       <div className="container-sm">
-        <p className="header">Our Vision and Mission</p>
+        <h2 className="header">Our Vision and Mission</h2>
         <div className="main-content">
           <p> Mental wellbeing is for all of us.</p>
           <p>
