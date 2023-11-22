@@ -1,16 +1,12 @@
 .our-core-values {
   margin-bottom: 5em;
 }
-/* .our-core-values .header {
-    margin: 1em;
-  } */
-ul li {
+.our-core-values-list {
   margin-left: 3em;
 }
-ul li:last-child {
+.our-core-values-list:last-child {
   margin-bottom: 1em;
 }
-.text-strong {
-  padding: 0em;
-  background-color: yellow;
+h3 {
+  padding: 0 0.8em;
 }
