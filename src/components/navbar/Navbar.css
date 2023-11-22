@@ -18,15 +18,22 @@
   font-weight: 600;
   font-size: 1.5em;
 }
-ul .nav-link {
+.main-nav-links-container {
+  display: flex;
   padding: 0.4em;
   font-weight: 600;
-  text-transform: uppercase;
 }
-ul .nav-link:hover {
+.main-menu-nav-link {
+  padding: 0.6em;
+  font-weight: 600;
+  text-transform: uppercase;
+  list-style: none;
+}
+.main-menu-nav-link:hover {
   border-bottom: 2px var(--primary-color) solid;
   background-color: #f4f4f4;
   transition: 0.5s;
+  border-radius: 0.2em;
 }
 /* toggle button */
 .toggle-button {
@@ -35,9 +42,11 @@ ul .nav-link:hover {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  z-index: 600;
+  z-index: 1000;
   height: 21px;
   width: 30px;
+  border: none;
+  background: none;
 }
 .toggle-button .bar {
   height: 3px;
@@ -53,50 +62,45 @@ ul .nav-link:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: auto;
+  height: 100%;
   width: 250px;
   z-index: 100;
   background: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   transition: right 0.3s ease-in-out;
 }
-.mobile-menu ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.mobile-menu-nav-links-container {
   margin-top: 100px;
   padding-right: 10px;
 }
-.mobile-menu ul .nav-link {
-  text-transform: none;
+.mobile-menu-nav-link {
+  list-style: none;
+  padding: 0.5em;
+  font-weight: 600;
 }
 /* media query */
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   .site-navbar .container {
     flex-direction: column;
   }
+  .main-menu-nav-link {
+    font-size: 0.8em;
+  }
 }
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .site-navbar .container {
     flex-direction: row;
   }
   .toggle-button {
     display: flex;
   }
-  .nav-links-container {
+  .main-menu {
     display: none;
   }
-  .mobile-menu ul {
-    flex-direction: column;
-  }
-  .mobile-menu.active {
+  .mobile-menu.is-open {
     right: 0;
   }
-  ul .nav-link {
-    padding: 0.6em;
-    font-weight: 600;
-  }
-  ul .nav-link:hover {
+  .mobile-menu-nav-link {
     border-bottom: none;
     background-color: #fff;
     transition: none;
