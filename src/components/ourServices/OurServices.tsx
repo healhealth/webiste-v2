@@ -9,31 +9,30 @@ const OurServices = () => {
   return (
     <div className="our-services">
       <div className="container-sm">
-        <p className="header">Our Services</p>
-        <div className="service-item-header">
-          <p>
-            <strong> Tools for mental health professionals</strong>
-          </p>
-          <div className="services-item-container">
-            <div>
-              <p>
-                We are building software and applications that help
-                psychiatrists, psychologists, therapists and other professionals
-                improve and accelerate their services resulting in more
-                efficient and accurate outcomes and quality mental healthcare
-                for their clients.
-              </p>
-            </div>
+        <h2 className="header">Our Services</h2>
 
-            <img src={Coaching} alt="coaching" />
+        <div className="service-item-picture-right">
+          <div>
+            <h3 className="service-item-heading">
+              Tools for mental health professionals
+            </h3>
+
+            <p>
+              We are building software and applications that help psychiatrists,
+              psychologists, therapists and other professionals improve and
+              accelerate their services resulting in more efficient and accurate
+              outcomes and quality mental healthcare for their clients.
+            </p>
           </div>
+
+          <img src={Coaching} alt="coaching image" />
         </div>
-        <div className="service-item-header">
-          <p>
-            <strong> Self-help tools</strong>
-          </p>
-          <div className="services-item-container">
-            <img src={SelfHelp} alt="SelfHelp" />
+
+        <div className="service-item-picture-left">
+          <img src={SelfHelp} alt="SelfHelp image" />
+
+          <div>
+            <h3 className="service-item-heading">Self-help tools</h3>
             <p>
               We are developing free efficient self-help tools for mental
               wellbeing which can be utilized by both individuals and prescribed
@@ -46,11 +45,12 @@ const OurServices = () => {
             </p>
           </div>
         </div>
-        <div className="service-item-header">
-          <p>
-            <strong> Personal Development Coaching</strong>
-          </p>
-          <div className="services-item-container">
+
+        <div className="service-item-picture-right">
+          <div>
+            <h3 className="service-item-heading">
+              Personal Development Coaching
+            </h3>
             <p>
               Our team of psychotherapists and personal development coaches
               collaborate with clients to identify, pursue, and achieve their
@@ -66,11 +66,11 @@ const OurServices = () => {
               coaches serve as strategic thinking partners and sounding boards,
               providing inspiration and accountability.
             </p>
-            <img
-              src={MentalHealthProfessionals}
-              alt=" MentalHealthProfessionals "
-            />
           </div>
+          <img
+            src={MentalHealthProfessionals}
+            alt=" MentalHealthProfessionals image "
+          />
         </div>
       </div>
     </div>
