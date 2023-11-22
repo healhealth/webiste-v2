@@ -1,31 +1,32 @@
 .our-team {
   margin-bottom: 5em;
 }
-.team-content-container {
+.team-list-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2em;
 }
-.team-item {
+.team-member {
   display: flex;
   flex-direction: column;
   align-items: center;
+  list-style: none;
 }
-.team-item img {
+.team-member img {
   height: 250px;
   width: 220px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  margin: 1.5em;
+  margin: 1em;
 }
-.team-item p {
+.team-member p {
   font-size: small;
   text-align: center;
 }
-.team-item .description {
+.team-member-description {
   padding-top: 0.8em;
 }
 @media (max-width: 640px) {
-  .team-content-container {
+  .team-list-container {
     grid-template-columns: 1fr 1fr;
   }
 }
