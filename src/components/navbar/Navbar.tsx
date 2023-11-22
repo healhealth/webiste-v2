@@ -1,87 +1,79 @@
-import React, { useRef } from "react";
-import { Link } from "react-router-dom";
-
+import { useCallback, useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import classNames from "classnames";
 import "./Navbar.css";
 import logo from "../../assets/heal-health-logo-192.png";
-const Navbar = () => {
-  const toggleButton = useRef<HTMLDivElement>(null);
-  const mobileMenu = useRef<HTMLDivElement>(null);
 
-  const handleOpenMobileMenu = () => {
-    mobileMenu.current?.classList.toggle("active");
-  };
-  const handleCloseMobileMenu = () => {
-    mobileMenu.current?.classList.toggle("active");
-  };
+const Navbar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const onHandleMobileMenuClick = useCallback(() => {
+    setIsMobileMenuOpen((previousState) => !previousState);
+  }, []);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location]);
+
   return (
     <div className="site-navbar">
       <div className="container">
         <div className="logo">
-          <img className="logo-img" src={logo} alt="logo" />
+          <img className="logo-img" src={logo} alt="Heal Health logo" />
           <p className="logo-text">Heal Health</p>
         </div>
-        <div ref={toggleButton} onClick={handleOpenMobileMenu}>
-          <a href="#" className="toggle-button">
-            <span className="bar"></span>
-            <span className="bar"></span>
-            <span className="bar"></span>
-          </a>
-        </div>
-        {/* Mobile menu */}
-        <div className="mobile-menu" ref={mobileMenu}>
-          <ul>
-            <Link className="nav-link" to="/" onClick={handleCloseMobileMenu}>
-              Home
-            </Link>
-            <Link
-              className="nav-link"
-              to="/about-us"
-              onClick={handleCloseMobileMenu}
-            >
-              About us
-            </Link>
-            <Link
-              className="nav-link"
-              to="/our-services"
-              onClick={handleCloseMobileMenu}
-            >
-              Services
-            </Link>
-            <Link
-              className="nav-link"
-              to="/our-team"
-              onClick={handleCloseMobileMenu}
-            >
-              Team
-            </Link>
-            <Link
-              className="nav-link"
-              to="/join-us-today"
-              onClick={handleCloseMobileMenu}
-            >
-              Join us
-            </Link>
+
+        <button
+          className={classNames("toggle-button")}
+          onClick={onHandleMobileMenuClick}
+        >
+          <span className="bar" />
+          <span className="bar" />
+          <span className="bar" />
+        </button>
+
+        <nav
+          className={classNames("mobile-menu", { "is-open": isMobileMenuOpen })}
+        >
+          <ul className="mobile-menu-nav-links-container">
+            <li className="mobile-menu-nav-link">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="mobile-menu-nav-link">
+              <Link to="/about-us">About us</Link>
+            </li>
+            <li className="mobile-menu-nav-link">
+              <Link to="/our-services">Services</Link>
+            </li>
+            <li className="mobile-menu-nav-link">
+              <Link to="/our-team">Team</Link>
+            </li>
+            <li className="mobile-menu-nav-link">
+              <Link to="/join-us-today">Join us</Link>
+            </li>
           </ul>
-        </div>
-        <div className="nav-links-container">
-          <ul>
-            <Link className="nav-link" to="/">
-              Home
-            </Link>
-            <Link className="nav-link" to="/about-us">
-              About us
-            </Link>
-            <Link className="nav-link" to="/our-services">
-              Services
-            </Link>
-            <Link className="nav-link" to="/our-team">
-              Team
-            </Link>
-            <Link className="nav-link" to="/join-us-today">
-              Join us
-            </Link>
+        </nav>
+        <nav className="main-menu">
+          <ul className="main-nav-links-container">
+            <li className="main-menu-nav-link">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="main-menu-nav-link">
+              <Link to="/about-us">About us</Link>
+            </li>
+            <li className="main-menu-nav-link">
+              <Link to="/our-services">Services</Link>
+            </li>
+            <li className="main-menu-nav-link">
+              <Link to="/our-team">Team</Link>
+            </li>
+            <li className="main-menu-nav-link">
+              <Link to="/join-us-today">Join us</Link>
+            </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </div>
   );
