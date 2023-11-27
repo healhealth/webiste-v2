@@ -25,11 +25,11 @@ const OurServices = () => {
             </p>
           </div>
 
-          <img src={Coaching} alt="coaching image" />
+          <img src={Coaching} alt="Coaching" />
         </div>
 
         <div className="service-item-picture-left">
-          <img src={SelfHelp} alt="SelfHelp image" />
+          <img src={SelfHelp} alt="Self help" />
 
           <div>
             <h3 className="service-item-heading">Self-help tools</h3>
@@ -69,7 +69,7 @@ const OurServices = () => {
           </div>
           <img
             src={MentalHealthProfessionals}
-            alt=" MentalHealthProfessionals image "
+            alt="Mental health professionals"
           />
         </div>
       </div>

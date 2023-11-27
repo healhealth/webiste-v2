@@ -1,11 +1,13 @@
 .join-us {
   margin-bottom: 5em;
 }
+
 .join-us-button {
   display: flex;
   justify-content: center;
   margin: 1em 0;
 }
+
 .join-us-button a {
   display: flex;
   align-items: center;
@@ -19,13 +21,16 @@
   color: #333;
   transition: 0.5 ease-in;
 }
+
+.join-us-link a {
+  text-decoration: underline;
+}
+
 .join-us-button a:hover {
   background-color: var(--primary-color-dark);
   color: #fff;
 }
+
 .join-us p {
   padding: 1em;
-}
-.join-us-link a {
-  text-decoration: underline;
 }

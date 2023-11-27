@@ -3,9 +3,11 @@
   flex-direction: column;
   align-items: center;
 }
+
 .about-us p {
   padding: 0.8em;
 }
+
 .our-core-values-container p {
   padding-top: 0.2em;
 }
