@@ -1,5 +1,6 @@
 import "./OurCoreValues.css";
 const OurCoreValues = () => {
+  asd;
   return (
     <div className="our-core-values">
       <div className="container-sm">
