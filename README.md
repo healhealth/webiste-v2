@@ -19,6 +19,26 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run test:coverage`
+
+Generates test coverage reports.
+
+### `npm run lint:js`
+
+Runs ESLint.
+
+### `npm run lint:css`
+
+Runs StyleLint.
+
+### `npm run lint`
+
+Runs both ESLint and StyleLint.
+
+### `npm run prettier`
+
+Runs Prettier's checker.
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
