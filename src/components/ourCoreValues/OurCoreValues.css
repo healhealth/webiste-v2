@@ -1,0 +1,12 @@
+.our-core-values {
+  margin-bottom: 5em;
+}
+.our-core-values-list {
+  margin-left: 3em;
+}
+.our-core-values-list:last-child {
+  margin-bottom: 1em;
+}
+h3 {
+  padding: 0 0.5em;
+}

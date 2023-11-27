@@ -1,52 +1,39 @@
-import { ReactComponent as MentalHealthProfessionals } from "../../assets/mental-health-professionals.svg";
-import { ReactComponent as SelfHelp } from "../../assets/self-help.svg";
-import { ReactComponent as Coaching } from "../../assets/coaching.svg";
-import { Box, Typography } from "@mui/material";
+import React from "react";
 
 import "./OurServices.css";
+import MentalHealthProfessionals from "../../assets/mental-health-professionals.svg";
+import SelfHelp from "../../assets/self-help.svg";
+import Coaching from "../../assets/coaching.svg";
+
 const OurServices = () => {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        width: "80%",
-        margin: "auto",
-      }}
-    >
-      <Typography
-        className="our-services-title"
-        sx={{
-          textAlign: "center",
-          fontWeight: "bold",
-          marginTop: 8,
-          variant: "h2",
-        }}
-      >
-        OUR SERVICES
-      </Typography>
-      <Box>
-        <Box display="grid" gridTemplateColumns="1fr 200px" gap="40px">
-          <Box marginTop={12}>
-            <Typography sx={{ fontWeight: "bold" }}>
+    <div className="our-services">
+      <div className="container-sm">
+        <h2 className="header">Our Services</h2>
+
+        <div className="service-item-picture-right">
+          <div>
+            <h3 className="service-item-heading">
               Tools for mental health professionals
-            </Typography>
-            <Typography>
+            </h3>
+
+            <p>
               We are building software and applications that help psychiatrists,
               psychologists, therapists and other professionals improve and
               accelerate their services resulting in more efficient and accurate
               outcomes and quality mental healthcare for their clients.
-            </Typography>
-          </Box>
-          <Box marginTop={-6}>
-            <Coaching />
-          </Box>
-        </Box>
-        <Box display="grid" gridTemplateColumns="200px 1fr" gap={20}>
-          <SelfHelp />
-          <Box marginTop="80px">
-            <Typography sx={{ fontWeight: "bold" }}>Self-help tools</Typography>
-            <Typography>
+            </p>
+          </div>
+
+          <img src={Coaching} alt="coaching image" />
+        </div>
+
+        <div className="service-item-picture-left">
+          <img src={SelfHelp} alt="SelfHelp image" />
+
+          <div>
+            <h3 className="service-item-heading">Self-help tools</h3>
+            <p>
               We are developing free efficient self-help tools for mental
               wellbeing which can be utilized by both individuals and prescribed
               by professionals to their clients. Individuals can use the tools
@@ -55,15 +42,16 @@ const OurServices = () => {
               and websites. We are going to provide information, guidance, and
               techniques for managing stress, improving mood, and addressing
               specific mental health concerns.
-            </Typography>
-          </Box>
-        </Box>
-        <Box display="grid" gridTemplateColumns="1fr 1fr" gap={20}>
-          <Box marginTop={15}>
-            <Typography sx={{ fontWeight: "bold" }}>
+            </p>
+          </div>
+        </div>
+
+        <div className="service-item-picture-right">
+          <div>
+            <h3 className="service-item-heading">
               Personal Development Coaching
-            </Typography>
-            <Typography>
+            </h3>
+            <p>
               Our team of psychotherapists and personal development coaches
               collaborate with clients to identify, pursue, and achieve their
               goals using various techniques such as goal-setting, active
@@ -77,12 +65,16 @@ const OurServices = () => {
               employees, managers, and leaders. Regardless of the approach, our
               coaches serve as strategic thinking partners and sounding boards,
               providing inspiration and accountability.
-            </Typography>
-          </Box>
-          <MentalHealthProfessionals />
-        </Box>
-      </Box>
-    </Box>
+            </p>
+          </div>
+          <img
+            src={MentalHealthProfessionals}
+            alt=" MentalHealthProfessionals image "
+          />
+        </div>
+      </div>
+    </div>
   );
 };
+
 export default OurServices;

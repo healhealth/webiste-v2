@@ -1,5 +1,28 @@
-@media (max-width: 480px) {
-  .our-services-title {
-    margin-top: 0px;
+.service-item-picture-right,
+.service-item-picture-left {
+  display: grid;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+.service-item-picture-right {
+  grid-template-columns: 1fr 240px;
+}
+.service-item-picture-left {
+  grid-template-columns: 240px 1fr;
+}
+.service-item-heading {
+  padding: 0;
+}
+
+@media (max-width: 500px) {
+  .service-item-picture-right,
+  .service-item-picture-left {
+    display: flex;
+  }
+  .service-item-picture-right {
+    flex-direction: column;
+  }
+  .service-item-picture-left {
+    flex-direction: column-reverse;
   }
 }
