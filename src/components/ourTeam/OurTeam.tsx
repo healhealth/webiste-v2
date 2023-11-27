@@ -12,6 +12,7 @@ const OurTeam = () => {
         <h2 className="header">Our Team</h2>
         <ul className="team-list-container">
           <li className="team-member">
+            {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
             <img src={nashmil} alt="Nashmil's profile picture" />
             <p className="team-member-name">
               <strong>Nashmil Sepehriazad</strong>
@@ -25,7 +26,8 @@ const OurTeam = () => {
             </p>
           </li>
           <li className="team-member">
-            <img src={bence} alt="Bence A.'s profile picture" />
+            {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+            <img src={bence} alt="Bence's profile picture" />
             <p className="team-member-name">
               <strong>Bence A. Tóth</strong>
             </p>
@@ -38,7 +40,8 @@ const OurTeam = () => {
             </p>
           </li>
           <li className="team-member">
-            <img src={marcell} alt="Marcel's profile picture" />
+            {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+            <img src={marcell} alt="Marcell's profile picture" />
             <p className="team-member-name">
               <strong> Marcell Ákos Tóth</strong>
             </p>
@@ -51,6 +54,7 @@ const OurTeam = () => {
             </p>
           </li>
           <li className="team-member">
+            {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
             <img src={qamar} alt="Qamar's profile picture" />
             <p className="team-member-name">
               <strong> Qamar Farooq</strong>
@@ -63,6 +67,7 @@ const OurTeam = () => {
             </p>
           </li>
           <li className="team-member">
+            {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
             <img src={dejene} alt="Dejene's profile picture" />
             <p className="team-member-name">
               <strong> Dejene Daba</strong>
@@ -74,6 +79,7 @@ const OurTeam = () => {
             </p>
           </li>
           <li className="team-member">
+            {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
             <img src={behzad} alt="Behzad's profile picture" />
             <p className="team-member-name">
               <strong>Behzad Ebrahimi</strong>
